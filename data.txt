@@ -1,0 +1,16 @@
+# Path Forwad:
+-- Python Installation
+-- VSCode Installation
+-- Create Virual Environment for Isolation  [python -m venv venv]
+-- Activate venv [venv\Scripts\activate] or In above search bar write .\Scripts\activate
+-- Install FastAPI as well as all dependencies require to use fastapi [pip install fastapi[all]]
+-- Run Server [uvicorn main:app --reload]
+-- When we have different function but method is same and path is same then fastapi retreive data or do any operations based on first match...
+-- GET: Fteach Data from DB, POST: To Provide data to backend or DB
+-- CRUD Operations: Create(POST), Read (GET), Update(PUT(we have to provide all the details)/PATCH(we have to provide speocific details that we have to change)), Delete(DELETE)
+-- Path Operations Order Matter in Fatseapi because if some one having function with path opt get('/post/{id}')  and get('/post/latest') so this both are different so when ever you execute next function it give error becuase latest validate with id which is not true
+-- Maintain the Status Code like 404 Not Found, 201 When Data Posted or Created so and soooo
+-- Support Automatic Serialization...
+-- Limitation of FastAPI: Database Migration so there for we have to use alembic library...
+-- Using Pydantic Model we can return what data we want full data or specific data...
+-- For Authorization we have to use JWT Variable for Automatic Environment Authorization.
